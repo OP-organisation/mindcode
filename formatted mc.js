@@ -225,7 +225,7 @@ function MCmain() {
     [/<browsertitle/gi, "<title"],
     [/<\/browsertitle/gi, "</title"],
     [/<content/gi, `<body`],
-    [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script
+    [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script>
     <style>body {
     background: linear-gradient(to bottom right,
       #f0f0f0,#f1f1f1,#f2f2f2,#f3f3f3,#f4f4f4,#f5f5f5, #f6f6f6, #f7f7f7, #f8f8f8, #f9f9f9, 
