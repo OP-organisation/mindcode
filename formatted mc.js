@@ -233,13 +233,7 @@ function MCmain() {
     [/<\/anchor/gi, "</a"],
     [/<image/gi, `<img loading="lazy"`],  
     [/<\/image/gi, "",],                       
-    [/<info/gi, "<head"],                     
-    [/<\/info/gi, ` <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"s crossorigin="anonymous"></head`],  // Standard head with Bootstrap
-    [/<browsertitle/gi, "<title"],
-    [/<\/browsertitle/gi, "</title"],
-    [/<content/gi, `<body`],
-    [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script>
-    <style>body {
+    [/<info/gi, `<style>body {
     background: linear-gradient(to bottom right,
       #f0f0f0,#f1f1f1,#f2f2f2,#f3f3f3,#f4f4f4,#f5f5f5, #f6f6f6, #f7f7f7, #f8f8f8, #f9f9f9, 
       #fafafa, #fbfbfb, #fcfcfc, #fdfdfd, #fefefe, #ffffff);min-height: 100vh;
@@ -249,7 +243,12 @@ function MCmain() {
       }
     iframe{
     border: 0 solid transparent}
-  </style></body`],  
+  </style><head`],                     
+    [/<\/info/gi, ` <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"s crossorigin="anonymous"></head`],  // Standard head with Bootstrap
+    [/<browsertitle/gi, "<title"],
+    [/<\/browsertitle/gi, "</title"],
+    [/<content/gi, `<body`],
+    [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script></body`],  
     [/<guide/gi, "<nav"],
     [/<\/giuide/gi, "</nav"],
     [/<media/gi, "<figure"],
