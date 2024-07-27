@@ -3,8 +3,10 @@ const base64 = {
     if (typeof data !== 'string') {
       console.error('Error Code 2: Invalid data. The format is base64.encode("data").');
       return '';
+    }try{return btoa(data);}
+    catch(e){
+      return data;
     }
-    return btoa(data);
   },
 
   decode(data) {
@@ -12,7 +14,10 @@ const base64 = {
       console.error('Error Code 2: Invalid data. The format is base64.decode("data").');
       return '';
     }
-    return atob(data);
+    try{return atob(data);}
+    catch(e){
+      return data;
+    }
   }
 };
 
@@ -140,7 +145,9 @@ const uri = {
       console.error('Error Code 2: Invalid data. The format is uri.encode("data").');
       return '';
     }
-    return encodeURI(data);
+    try{return encodeURI(data);}catch(e){
+      return data;
+    }
   },
 
   decode(data) {
@@ -148,7 +155,9 @@ const uri = {
       console.error('Error Code 2: Invalid data. The format is uri.decode("data").');
       return '';
     }
-    return decodeURI(data);
+    try{return decodeURI(data);}catch(e){
+      return data;
+    }
   },
 
   component: {
@@ -157,7 +166,9 @@ const uri = {
         console.error('Error Code 2: Invalid data. The format is uri.component.encode("data").');
         return '';
       }
-      return encodeURIComponent(data);
+      try{return encodeURIComponent(data);}catch(e){
+        return data;
+      }
     },
 
     decode(data) {
@@ -165,7 +176,9 @@ const uri = {
         console.error('Error Code 2: Invalid data. The format is uri.component.decode("data").');
         return '';
       }
-      return decodeURIComponent(data);
+      try{return decodeURIComponent(data);}catch(e){
+        return data;
+      }
     }
   }
 };
