@@ -226,34 +226,34 @@ function MCmain() {
     [/<\/browsertitle/gi, "</title"],
     [/<content/gi, `<body`],
     [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script
-    <stylebody {
+    <style>body {
     background: linear-gradient(to bottom right,
       #f0f0f0,#f1f1f1,#f2f2f2,#f3f3f3,#f4f4f4,#f5f5f5, #f6f6f6, #f7f7f7, #f8f8f8, #f9f9f9, 
       #fafafa, #fbfbfb, #fcfcfc, #fdfdfd, #fefefe, #ffffff);min-height: 100vh;
   }
-  </style</body>`],  
+  </style></body`],  
     [/<guide/gi, "<nav"],
     [/<\/giuide/gi, "</nav"],
     [/<media/gi, "<figure"],
     [/<\/media/gi, "</figure"],
     [/<mediacap/gi, "<figcaption"],
     [/<\/mediacap/gi, "</figcaption"],
-    [/<quote/gi, "<blockquote>"],
-    [/<\/quote/gi, "</blockquote>"],
-    [/<bold/gi, "<strong>"],
-    [/<\/bold/gi, "</strong>"],
+    [/<quote/gi, "<blockquote"],
+    [/<\/quote/gi, "</blockquote"],
+    [/<bold/gi, "<strong"],
+    [/<\/bold/gi, "</strong"],
     [/<division/gi, "<div"],
     [/<\/division/gi, "</div"],
     [/<marker/gi, "<span"],
     [/<\/marker/gi, "</span"],
     [/<linebreak/gi, "<hr"],
     [/<\/linebreak/gi, ""],
-    [/<break/gi, "<br>"],
+    [/<break/gi, "<br"],
     [/<\/break/gi, ""],
-    [/<keyboard/gi, "<kbd>"],
-    [/<\/keyboard/gi, "</kbd>"],
-    [/<paragraph/gi, "<p>"],
-    [/<\/paragraph/gi, "</p>"],
+    [/<keyboard/gi, "<kbd"],
+    [/<\/keyboard/gi, "</kbd"],
+    [/<paragraph/gi, "<p"],
+    [/<\/paragraph/gi, "</p"],
     [/<script/gi, "<script defer"],
   ];
   
