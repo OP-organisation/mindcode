@@ -293,9 +293,14 @@ if (document.getElementById("mc")) {
   MCmain();
 }
 
-function renameHtmlTag(HTML, BFML) {
- const _jhbduab = [/< + HTML + /ig, "<"+ BFML];
-  findReplacePairs.push(_jhbduab);
+function renameHtmlTag(HTML, MC) {
+    if (typeof HTML !== 'string' || typeof MC !== 'string') {
+        console.error('Error Code 2: Invalid data. The format is renameHtmlTag("HTML","MC")');
+        return;
+    }
+    const regex = new RegExp(`<${HTML}`, 'gi');
+    const replacement = `<${MC}`;
+    findReplacePairs.push([regex, replacement]);
   MCmain();
 }
 
