@@ -298,8 +298,8 @@ function renameHtmlTag(HTML, MC) {
         console.error('Error Code 2: Invalid data. The format is renameHtmlTag("HTML","MC")');
         return;
     }
-    const regex = new RegExp(`<${HTML}`, 'gi');
-    const replacement = `<${MC}`;
+    const regex = new RegExp(`<${MC}`, 'gi');
+    const replacement = `<${HTML}`;
     findReplacePairs.push([regex, replacement]);
   MCmain();
 }
