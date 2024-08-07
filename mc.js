@@ -243,7 +243,17 @@ let findReplacePairs = [
   [/<browsertitle/gi, "<title"],
   [/<\/browsertitle/gi, "</title"],
   [/<content/gi, `<body`],
-  [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script></body`],  
+  [/<\/content/gi, ` <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"  crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-u3s5FVf6IVe4hnLCvbzqhNQUQIkft9yehEbrsrYqXJPBKUCzPraxofco1zleEjT" crossorigin="anonymous"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('https://op-organisation.github.io/mindcode/service-worker.js')
+        .then(registration => {
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  </script></body`],  
   [/<guide/gi, "<nav"],
   [/<\/giuide/gi, "</nav"],
   [/<media/gi, "<figure"],
